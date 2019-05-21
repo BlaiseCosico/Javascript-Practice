@@ -1,9 +1,82 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body>
+.container{
+	height: 100%;
+	display: grid;
+	/* grid-template: repeat(2,50) / repeat(3, -- 1fr) 1fr = one fraction */
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: 40px 700px 350px 350px 40px;
+	grid-template-areas:
+		"m m m m m"
+		"p p p p p"
+		"c c c s s"
+		"c2 c2 c2 c2 c2"
+		"f f f f f"
+	;
+	padding: 0px;
 
-</body>
-</html>
+}
+
+
+.menu {
+	grid-area: m;
+}
+
+.photo {
+	grid-area: p;
+	height: 100%;
+	background-size: cover;
+
+}
+
+.content {
+	grid-area: c;
+	
+}
+
+.content2 {
+	grid-area: c2;
+}
+
+.signup {
+	grid-area: s;
+}
+.footer{
+	grid-area: f;
+}
+
+
+
+
+
+
+
+
+
+.container > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: #ffeead;
+}
+
+html, body {
+  background-color: #ffeead;
+  margin: 10px;
+}
+
+.container > div:nth-child(1n) {
+  background-color: #96ceb4;	
+}
+
+.container > div:nth-child(3n) {
+  background-color: #88d8b0;
+}
+
+.container > div:nth-child(2n) {
+      background-color: #ff6f69;
+}
+
+.container > div:nth-child(4n) {
+      background-color: #ffcc5c;
+}
+
