@@ -15,10 +15,17 @@
 
 }
 
-
 .menu {
 	grid-area: m;
+	float:right;
 }
+
+.menu > h3 {
+	font-size: 25px;
+	color: #000000;
+	text-align: left;
+}
+
 
 .photo {
 	grid-area: p;
@@ -44,16 +51,8 @@
 }
 
 
-
-
-
-
-
-
-
 .container > div {
     display: flex;
-    justify-content: center;
     align-items: center;
     font-size: 2em;
     color: #ffeead;
@@ -61,7 +60,7 @@
 
 html, body {
   background-color: #ffeead;
-  margin: 10px;
+  margin: 0px;
 }
 
 .container > div:nth-child(1n) {
